@@ -1,0 +1,28 @@
+# Ignore build output folders for all projects
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# NuGet packages
+*.nupkg
+packages/
+
+# Test results and coverage
+TestResults/
+*.coverage
+*.coveragexml
+
+# Publish output
+publish/
+
+# Environment files (optional)
+.env
