@@ -34,7 +34,7 @@ A C# .NET Web API project that is designed to validates user input.
 
 ## Notes
 
-- Make you have .NET 8 SDK installed.
+- Make sure you have .NET 8 SDK installed.
 - Modify ports and settings in `launchSettings.json` or environment variables as needed.
 - API will be available on: `https://localhost:7295` or `http://localhost:5155` (redirected to 7295)
 - Swagger UI on `https://localhost:7295/swagger/index.html`
