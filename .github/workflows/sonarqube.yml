@@ -45,7 +45,7 @@ jobs:
       - name: Install ReportGenerator tool
         run: dotnet tool install -g dotnet-reportgenerator-globaltool
       - name: Convert coverage to Cobertura format
-        run: reportgenerator -reports:"CredentialValidator.Tests/TestResults/*/coverage.cobertura.xml" -targetdir:"CredentialValidator.Tests/TestResults/CoverageReport" -reporttypes:Cobertura -reportversion:1.0
+        run: reportgenerator -reports:"CredentialValidator.Tests/TestResults/*/coverage.cobertura.xml" -targetdir:"CredentialValidator.Tests/TestResults/CoverageReport" -reporttypes:Cobertura -reportversion:1
       - name: Begin SonarCloud analysis
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
