@@ -51,7 +51,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"charliesgophers_cgo" /o:"charliesgophers" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="CredentialValidator.Tests/TestResults/CoverageReport/cobertura.xml" /d:sonar.cs.vstest.reportsPaths="CredentialValidator.Tests/TestResults/**/*.trx" 
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"charliesgophers_cgo" /o:"charliesgophers" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.coverageReportPaths="CredentialValidator.Tests/TestResults/CoverageReport/cobertura.xml" /d:sonar.cs.vstest.reportsPaths="CredentialValidator.Tests/TestResults/**/*.trx" 
       - name: Build for SonarCloud
         run: dotnet build
       - name: End SonarCloud analysis
